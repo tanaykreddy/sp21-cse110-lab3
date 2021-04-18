@@ -1,11 +1,13 @@
 /* Universal */
-body {
+* {
+    font-family: 'Roboto', sans-serif;
+}
+#main {
     margin-top: 0ch;
     margin-bottom: 0ch;
     margin-left: 0ch;
     margin-right: 0ch;
     background-color: white;
-    font-family: 'Roboto', sans-serif;
 }
 
 /* Header */
@@ -28,12 +30,30 @@ h1 {
 
 /* Nav */
 nav {
-    display: none;
+    text-align: center;
+    color: red;
+    font-size: 1.5em;
+    padding-top: 10px;
+}
+nav > div > a {
+    text-decoration: none;
+    color: maroon;
+}
+nav a:hover {
+    color: tomato;
+}
+nav a:active {
+    color: red;
 }
 
-/* Entry 1 */
-section {
+/* Entries */
+.entry, form {
+    margin: 10px;
     padding: 10px;
+    border-style: solid;
+    border-color: red;
+    border-width: 5px;
+    border-radius: 10px;
 }
 h2, h3, h4 {
     text-align: center;
@@ -47,11 +67,45 @@ h4 {
     position: relative;
     bottom: 40px;
 }
-
-audio {
-    color: red;
+p, audio, ol, ul, img, video, form, summary {
+    color: maroon;
+    position: relative;
+    bottom: 30px;
 }
-
+img[alt="Vaccine"] {
+    width: 50%;
+}
+summary {
+    display: block;
+}
+hr + hr {
+    display: none;
+}
+section ~ hr {
+    display: none;
+}
+ol.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+ul.list {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 40px;
+    justify-items: end;
+    align-items: center;
+}
+form {
+    margin-top: 40px;
+}
+fieldset {
+    height: 50%;
+    width: 50%;
+    min-width: 300px;
+    max-width: 500px;
+}
 
 /* Footer */
 footer {
@@ -63,4 +117,10 @@ footer {
 footer > span {
     color: white;
     font-size: 2ex;
+}
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 2em;
+    }
 }
