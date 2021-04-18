@@ -1,6 +1,9 @@
 /* Universal styling */
 body {
-    margin: 0cm;
+    margin-top: 0ch;
+    margin-bottom: 0ch;
+    margin-left: 0ch;
+    margin-right: 0ch;
     background-color: white;
 }
 
@@ -9,10 +12,26 @@ header {
     background-color: rgb(255,0,0);
 }
 h1 {
-    margin: 0px;
-    padding: 10mm;
+    margin: 0px 0px 0px 0px;
+    padding-top: 1cm;
+    padding-bottom: 1cm;
+    padding-left: 1cm;
+    padding-right: 1cm;
     text-align: center;
     color: #FFFFFF;
     font-family: 'Roboto', sans-serif;
     font-size: 3em;
+}
+
+/* Footer styling */
+footer {
+    background-color: hsl(0, 100%, 50%);
+    padding: 5mm 5mm 5mm 5mm;
+    margin: auto;
+    text-align: center;
+}
+footer > span {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2ex;
 }
